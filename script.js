@@ -74,9 +74,9 @@ for(var i=0;i<operator.length;i++){
                     else if(output<0){
                         // console.log("int"+-1*temp);
                         output=output*-1;
-                        console.log(output);
+                        //console.log(output);
                     }
-                    console.log(output);
+//                     console.log(output);
                     printOutput("")
                     printOutput(output);
                 }
@@ -105,7 +105,7 @@ for(var i=0;i<funcs.length;i++){
 
         var output=reverseNumberFormat(getOutput());
         var history=getHistory();      
-        console.log(history);
+//         console.log(history);
         if(history=="Invalid Input"){
             history="";
             printHistory(history);
@@ -114,7 +114,7 @@ for(var i=0;i<funcs.length;i++){
             printHistory("Invalid Input");
         }
         else if(this.id=="log10"){
-            console.log(output);
+//             console.log(output);
             if(output<0){
                 printHistory("Invalid Input");
             }
@@ -126,7 +126,7 @@ for(var i=0;i<funcs.length;i++){
             }    
         }
         else if(this.id=="log2") {
-            console.log(output);
+//             console.log(output);
             if(output<0){
                 printHistory("Invalid Input");
             }
@@ -142,7 +142,7 @@ for(var i=0;i<funcs.length;i++){
                 printHistory("Invalid Input");
             }
             else{
-                console.log(output);
+//                 console.log(output);
                 var res=Math.log(output)
                 printOutput("")
                 history=history+res; 
@@ -152,7 +152,7 @@ for(var i=0;i<funcs.length;i++){
             }
         else if(this.id=="abs") {
             if(output!=""){
-                console.log(output);
+//                 console.log(output);
                 var res=Math.abs(output);
                 printOutput("");
                 output=res; 
@@ -160,14 +160,14 @@ for(var i=0;i<funcs.length;i++){
             }                 
         }
         else if(this.id=="sq") {
-            console.log(output);
+//             console.log(output);
             var res=Math.pow(output,2);
             printOutput("");
             output=res; 
             printOutput(output);     
         }
         else if(this.id=="pow") {
-            console.log(history);
+//             console.log(history);
             history=history+output+"**";
             
             // console.log(eval(history));
@@ -176,7 +176,7 @@ for(var i=0;i<funcs.length;i++){
             printOutput("");
         }
         else if(this.id=="sqrt") {
-            console.log(history);
+//             console.log(history);
             if(output<0){
                 printHistory("Invalid Input");
             }
@@ -189,7 +189,7 @@ for(var i=0;i<funcs.length;i++){
             }
         }
         else if(this.id=="inv") {
-            console.log(history);
+//             console.log(history);
             history=history+output+"**"+"-1";
             // console.log(eval(history));
             printHistory(history);
@@ -197,35 +197,35 @@ for(var i=0;i<funcs.length;i++){
             printOutput("");
         }
         else if(this.id=="floor") {
-            console.log(output);
+//             console.log(output);
             var res=Math.floor(output);
             printOutput("");
             output=res; 
             printOutput(output);     
         }
         else if(this.id=="ceil") {
-            console.log(output);
+//             console.log(output);
             var res=Math.ceil(output);
             printOutput("");
             output=res; 
             printOutput(output);     
         }
         else if(this.id=="sin") {
-            console.log(output);
+//             console.log(output);
             var res=Math.sin((output * Math.PI)/ 180);
             printOutput("");
             output=res; 
             printOutput(output);     
         }
         else if(this.id=="cos") {
-            console.log(output);
+//             console.log(output);
             var res=Math.cos((output * Math.PI)/ 180);
             printOutput("");
             output=res; 
             printOutput(output);     
         }
         else if(this.id=="tan") {
-            console.log(output);
+//             console.log(output);
             if(output!="90"){
                 var res=Math.tan((output * Math.PI)/ 180);
                 printOutput("");
@@ -234,7 +234,7 @@ for(var i=0;i<funcs.length;i++){
             }    
         }
         else if(this.id=="sininv") {
-            console.log(output);
+//             console.log(output);
             var res=Math.asin(output);
             printOutput("");
             output=res; 
@@ -248,28 +248,28 @@ for(var i=0;i<funcs.length;i++){
             printOutput(output);
         }
         else if(this.id=="taninv") {
-            console.log(output);
+//             console.log(output);
             var res=Math.atan(output);
             printOutput("");
             output=res; 
             printOutput(output);   
         }
         else if(this.id=="pi") {
-            console.log(output);            
+//             console.log(output);            
             output=Math.PI;
             // printHistory(history);
             // console.log(eval(history));
             printOutput(output);  
         }
         else if(this.id=="e") {
-            console.log(output);            
+//             console.log(output);            
             output=Math.E;
             // printHistory(history);
             // console.log(eval(history));
             printOutput(output);  
         }
         else if(this.id=="10x") {
-            console.log(history);
+//             console.log(history);
             history=history+"10"+"**"+output;
             // console.log(eval(history));
             printHistory(history);
