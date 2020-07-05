@@ -1,0 +1,121 @@
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    background-image:url("bgImg3.jpg"); 
+}
+#container{
+   widows: 1000px;
+   margin: 100px auto;
+}
+.button{
+    margin-top:55px;
+    padding-top:30px;
+}
+#scipanal{
+    opacity: 0.9;
+    transition: 0.5s;
+    width: 320px;
+    height: 520px;
+    padding: 10px;
+    margin:0 auto;
+    top:20px;
+    align-items: stretch;
+    position: relative;
+    background:linear-gradient(90deg, rgb(26, 230, 43),blue);
+    border-radius:10px ;
+    float: left;
+    box-shadow: 12px -13px 0px rgba(0,0,0,0.2), 19px -14px 20px 0 rgba(0,0,0,0.19);
+    display: none;
+    
+}
+#calculator{
+    opacity: 0.9;
+    width: 320px;
+    height: 520px;
+    background-color: rgb(26, 230, 43);
+    margin-left: 350px;
+    padding: 10px;
+    top:20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 12px -13px 0px rgba(0,0,0,0.2), 19px -14px 20px 0 rgba(0,0,0,0.19);
+    float: left;
+    
+}
+
+.opSci{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;   
+}
+#result{
+    height: 120px;
+}
+#keyboard{
+    height: 400px;
+
+}
+.operator,.number,.Sci{
+    
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.operator:hover,.number:hover,.Sci:hover,.opSci:hover{
+    opacity: 0.7;
+}
+.operator,.number,.Sci,.opSci {
+    cursor: pointer;
+}
+.operator:active,.number:active,.Sci:active,.opSci:active{
+    font-size: 13px ;
+}
+.operator:focus,.number:focus,.Sci:focus,.opSci:focus{
+    outline: 0;
+}
+button:nth-child(4).operator{
+    font-size: 20px;
+    background-color: #20b2aa;
+}
+button:nth-child(8).operator{
+    font-size: 20px;
+    background-color: #ffa500;
+}
+button:nth-child(12).operator{
+    font-size: 20px;
+    background-color: #7d93e0;
+}
+button:nth-child(16).operator{
+    font-size: 20px;
+    background-color: #9477af;
+}
+button:nth-child(20).operator{
+    font-size: 20px;
+    background-color: #f08080;
+}
+
+#history{
+    text-align: right;   
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color:#363636 ;
+}
+#output{
+    text-align: right;  
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px; 
+}
