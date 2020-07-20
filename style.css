@@ -9,7 +9,7 @@ body{
    margin: 100px auto;
 }
 .button{
-    margin-top:55px;
+    /* margin-top:px; */
     padding-top:30px;
 }
 #scipanal{
@@ -54,6 +54,7 @@ body{
     font-weight: bold;
     font-size: 15px;   
 }
+
 #result{
     height: 120px;
 }
@@ -104,7 +105,6 @@ button:nth-child(20).operator{
     font-size: 20px;
     background-color: #f08080;
 }
-
 #history{
     text-align: right;   
     height: 20px;
@@ -118,4 +118,11 @@ button:nth-child(20).operator{
     height: 60px;
     margin: 10px 20px;
     font-size: 30px; 
+}
+
+#angle{
+    height:50px;
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
 }

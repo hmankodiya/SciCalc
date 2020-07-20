@@ -63,6 +63,7 @@ for(var i=0;i<operator.length;i++){
                 history=history+output;
                 if(this.id=="="){
                     var result=eval(history);
+                    // console.log("hello"+result);
                     printOutput(result);
                     printHistory("");
                 }
@@ -102,7 +103,6 @@ for(var i =0;i<number.length;i++){
 var funcs=document.getElementsByClassName("opSci");
 for(var i=0;i<funcs.length;i++){
     funcs[i].addEventListener('click',function(){
-
         var output=reverseNumberFormat(getOutput());
         var history=getHistory();      
         console.log(history);
@@ -110,7 +110,7 @@ for(var i=0;i<funcs.length;i++){
             history="";
             printHistory(history);
         }
-        if(output=="" && this.id!="pi"&&this.id!="e"){
+        if(output=="" && this.id!="pi"&&this.id!="e"&&this.id!="angle"){
             printHistory("Invalid Input");
         }
         else if(this.id=="log10"){
@@ -211,27 +211,58 @@ for(var i=0;i<funcs.length;i++){
             printOutput(output);     
         }
         else if(this.id=="sin") {
-            console.log(output);
-            var res=Math.sin((output * Math.PI)/ 180);
-            printOutput("");
-            output=res; 
-            printOutput(output);     
+            var selector=document.getElementById("angle");
+            console.log(selector.value);
+            if(selector.value=='degree'){
+                console.log(output);
+                var res=Math.sin((output * Math.PI)/ 180);
+                printOutput("");
+                output=res; 
+                printOutput(output);  
+            } 
+            else if(selector.value=='rad'){
+                console.log(output);
+                var res=Math.sin(output);
+                printOutput("");
+                output=res; 
+                printOutput(output);  
+            }  
         }
         else if(this.id=="cos") {
-            console.log(output);
-            var res=Math.cos((output * Math.PI)/ 180);
-            printOutput("");
-            output=res; 
-            printOutput(output);     
+            var selector=document.getElementById("angle");
+            console.log(selector.value);
+            if(selector.value=='degree'){
+                console.log(output);
+                var res=Math.cos((output * Math.PI)/ 180);
+                printOutput("");
+                output=res; 
+                printOutput(output);  
+            } 
+            else if(selector.value=='rad'){
+                console.log(output);
+                var res=Math.cos(output);
+                printOutput("");
+                output=res; 
+                printOutput(output);  
+            }     
         }
         else if(this.id=="tan") {
-            console.log(output);
-            if(output!="90"){
+            var selector=document.getElementById("angle");
+            console.log(selector.value);
+            if(selector.value=='degree'){
+                console.log(output);
                 var res=Math.tan((output * Math.PI)/ 180);
                 printOutput("");
                 output=res; 
-                printOutput(output);
-            }    
+                printOutput(output);  
+            } 
+            else if(selector.value=='rad'){
+                console.log(output);
+                var res=Math.tan(output);
+                printOutput("");
+                output=res; 
+                printOutput(output);  
+            } 
         }
         else if(this.id=="sininv") {
             console.log(output);
@@ -276,7 +307,6 @@ for(var i=0;i<funcs.length;i++){
             history=history+output;
             printOutput("");
         }
-        
     });
 }
 function Display(){
