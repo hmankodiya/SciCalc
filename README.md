@@ -11,3 +11,6 @@ Feel free to  clone my repository and experiment with the code , apply style and
 
 # RELEASE 2
 Bugs fixed, Negative nos now directly can be writtern , Domain regarding issues with the functions solved , Background image changed.   
+
+# RELEASE 3
+Now you can choose between degree and radian ( Two units for angle measurement) as your input angle in trignometric functions. The option selector can be found after invoking the Scientific functions Panel.    
